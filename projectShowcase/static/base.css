@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'Arial', sans-serif;
+    transition: 0.4s ;
+}
+
+:root {
+    --color-dark : #131313 ;
+}
+
+.navbar {
+    background-color: var(--color-dark);
+    display: flex ;
+    align-items: center;
+    padding: 1.5%;
+    color: whitesmoke;
+}
+
+.logo {
+    font-size : 1.8rem;
+}
+
+.navitems {
+    margin-left : 5%;
+}
+
+.navlink {
+    text-decoration: none;
+    color: rgb(194, 194, 194) ;
+    padding: 1rem 1.2rem ;
+}
+
+.navlink:hover {
+    color: white;
+}
+
+.user_auth {
+    margin-left: 40%;
+}
+
+.signin_btn {
+    color:white ;
+    padding: 0.8rem 1.2rem ;background-color: rgb(0, 88, 189);
+    border-radius: 0.3rem;
+    margin-right: 1rem ;
+    text-decoration: none;
+}
+.signin_btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.signup_btn {
+    color:white ;
+    padding: 0.8rem 1.2rem ;background-color: rgb(0, 88, 189);
+    border-radius: 0.3rem;
+    margin-right: 1rem ;
+    text-decoration: none;
+}
+.signup_btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.footer {
+    padding: 4rem ;
+    background-color: var(--color-dark) ;
+    color: white ;
+}
+
+.contibutors {
+    text-align: center;
+    line-height: 2 ;
+}
+
+.contrib-title {
+    font-size: 1.5em;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 1.5rem ;
+}

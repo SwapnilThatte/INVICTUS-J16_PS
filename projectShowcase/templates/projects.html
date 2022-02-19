@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'projects.css' %}">
+{% endblock styles %}
+    
+
+{% block body %}
+
+<a href="/newproject">New Project</a>
+    <nav class="project-nav">
+        <div class="navitems">
+            {% for project in projects %}
+                <br>
+                <hr>
+                <br>
+                <h1>TITLE : {{project.project_name}}</h1>
+                <h3>DESCRIPTION : {{project.project_desc}}</h3>
+                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
+                <br>
+                <hr>
+                <br>
+            {% endfor %}
+        </div>
+    </nav>
+
+
+{% endblock body %}

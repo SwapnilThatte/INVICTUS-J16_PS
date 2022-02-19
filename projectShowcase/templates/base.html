@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block styles %}{% endblock styles %}
+</head>
+<body>
+
+    <nav class="navbar">
+        
+        <div class="logo">
+            VESIT Projects
+        </div>
+
+        <div class="navitems">
+        <a href="/" class="navlink">Home</a>
+        <a href="/projects" class="navlink">Projects</a>
+        <a href="#" class="navlink">Reasearch</a>
+        </div>
+
+        <div class="user_auth">
+            <a href="/login" class="signin_btn">login</a>
+            <a href="/register" class="signup_btn">signup</a>
+            
+        </div>
+    </nav>
+    
+    {% block body %}
+
+    {% endblock body %}
+
+
+    <footer class="footer">
+        <div class="contibutors">
+            <span class="contrib-title"> Contibutors </span>
+            <br>
+             Swapnil Thatte
+            <br> 
+             Sanjana Bhojwani
+            <br>
+             Siya Doshi
+            <br>
+        </div>
+        <div class="copyright">All rights reserved. Copyright &copy; 2022</div>
+    
+    </footer>
+
+    {% block script %}{% endblock script %}
+
+</body>
+</html>
