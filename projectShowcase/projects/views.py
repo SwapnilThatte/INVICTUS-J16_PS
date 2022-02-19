@@ -7,7 +7,14 @@ def home(request):
     return render(request, 'home.html')
 
 def projects(request):
+
+    if request.method == 'POST':
+
+        
+        pass
+
     project = Projects.objects.all()
+    target = project.filter(id=2)
     context = {'projects': project}
     print(f"\n\n\n{project}\n\n\n")
     return render(request, 'projects.html', context)

@@ -4,7 +4,7 @@ from django.db import models
 
 class Projects(models.Model):
     project_name = models.CharField(max_length=60)
-    project_id = models.CharField(max_length=10)
+    project_id = models.CharField(max_length=14)
     project_desc = models.TextField()
 
     project_contributor_1 = models.CharField(max_length=20)

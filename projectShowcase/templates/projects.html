@@ -10,24 +10,36 @@
 {% block body %}
 
 <a href="/newproject">New Project</a>
-    <nav class="project-nav">
+    <form method="post" class="project-nav">
         <div class="navitems">
+            <span class="projectnav_link">
+                <input type="text" name="yearInput" id="yearInput" class="project_filter" placeholder="Filter by Year">
+            </span>
+            <span class="projectnav_link">
+                <input type="text" name="titleInput" id="titleInput" class="project_filter" placeholder="Filter by Title">
+            </span>
+            <span class="projectnav_link">
+                <input type="text" name="idInput" id="idInput" class="project_filter" placeholder="Filter by ID">
+            </span>
+            <span class="projectnav_link">
+                <input type="text" name="nameInput" id="nameInput" class="project_filter" placeholder="Filter by Contributer Name">
+            </span>
+        </div>
+    </form>
             {% for project in projects %}
                 <br>
                 <hr>
                 <br>
                 <h1>TITLE : {{project.project_name}}</h1>
                 <h3>DESCRIPTION : {{project.project_desc}}</h3>
-                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
-                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
-                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
-                <h4> CONTRIBUTOR : {{project.project_name}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_contributor_1}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_contributor_2}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_contributor_3}}</h4>
+                <h4> CONTRIBUTOR : {{project.project_contributor_4}}</h4>
                 <br>
                 <hr>
                 <br>
             {% endfor %}
-        </div>
-    </nav>
 
 
 {% endblock body %}
